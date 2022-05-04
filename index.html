@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contact</title>
+  </head>
+  <body>
+    <main id="main">
+      <header>
+        <div class="search">
+          <form action="">
+            <label for="search">
+              <i class="fas fa-search"></i>
+            </label>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search Contact"
+            />
+          </form>
+        </div>
+        <!-- Search -->
+
+        <div class="add">
+          <button class="addNew">
+            <i class="fas fa-user-plus"></i>
+            Add New Contact
+          </button>
+          <!-- add new -->
+        </div>
+        <!-- add -->
+        <div class="overLay"></div>
+      </header>
+
+      <section class="forms">
+        <div class="addNewContact contactForm">
+          <i class="fa fa-user-plus"></i>
+          <form action="">
+            <input type="text" placeholder="FullName" id="contact-form-name" />
+            <input
+              type="text"
+              placeholder="Phone number"
+              id="contact-form-phone"
+            />
+            <input
+              type="email"
+              placeholder="Email Address"
+              id="contact-form-email"
+            />
+            <input
+              type="text"
+              placeholder="Home Address"
+              id="contact-form-address"
+            />
+          </form>
+          <button class="save btn">
+            <i class="fas fa-save"></i>
+            Save
+          </button>
+          <!-- save btn -->
+          <div class="close">
+            <i class="fa fa-window-close"></i>
+          </div>
+          <!-- close -->
+        </div>
+        <!-- addNewContact -->
+
+        <div class="editContact contactForm">
+            <i class="fa fa-user-edit"></i>
+            <form action="">
+                <input type="text" placeholder="FullName" id="edit-form-name" />
+                <input
+                  type="text"
+                  placeholder="Phone number"
+                  id="edit-form-phone"
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  id="edit-form-email"
+                />
+                <input
+                  type="text"
+                  placeholder="Home Address"
+                  id="edit-form-address"
+                />
+              </form>
+              <button class="update btn">
+                <i class="fas fa-save"></i>
+                Update
+              </button>
+              <!-- update btn -->
+              <div class="close">
+                <i class="fa fa-window-close"></i>
+              </div>
+              <!-- close -->
+        </div> <!-- edit contact -->
+      </section> <!-- forms -->
+
+      <table>
+          <thead>
+              <tr>
+                  <th>#id</th>
+                  <th><i class="fa fa-user"></i> Name </th>
+                  <th><i class="fa fa-phone"></i> Phone </th>
+                  <th><i class="fas fa-envelope"></i> Email </th>
+                  <th><i class="fa-solid fa-map-location"></i> Address </th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+              </tr>
+          </thead>
+          <tbody id="tbody">
+
+          </tbody>
+      </table>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
